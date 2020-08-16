@@ -2,34 +2,69 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Sistema Solar</title>
     <style>
-        header{
-            color: white;
-        }
         body{
-            background: rgb(35, 35, 50);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: rgb(20, 20, 35);
+            background-image: url("img/particles.png");
             font-family: Helvetica Neue, Helvetica, Arial;
         }
+
+        header{
+            color: rgb(255, 255, 250);
+            cursor: default;
+        }
+
+        h1{
+            font-size: 50px;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -5%);
+        }
+
         main {
             color:honeydew;
             scale: 5px;
             margin: auto;
             size: 5px;
         }
-        img {
-            height: 500px;
-            width: 500px;
+
+        #grade{
+            margin-top: 15%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        img{
+            padding: 15%;
+            height: 150px;
+            width: 150px;
+            transition: all 0.4s ease-out;
+            cursor: pointer;
+        }
+        img:hover{
+            transform: scale(1.2);           
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Planetas da <a href="https://pt.wikipedia.org/wiki/Via_Láctea" target="_blank">Via láctea</a></h1>
+        <h1>O nosso Sistema Solar</h1>
     </header>
     <main>
-        <a href="https://pt.wikipedia.org/wiki/Via_Láctea"><img src="img/final-mosaic.jpg"></a>
-        <p>Via Láctea</p>
+        <div id=grade>
+        <div><a href="" target="_blank"><img src="img/mercury.png" alt="missing img" title="Mercurio"></a></div>
+        <div><a href="" target="_blank"><img src="img/venus.png" alt="missing img" title="Venus"></a></div>
+        <div><a href="earth.html" target="_self"><img src="img/earth.png" alt="missing img" title="Terra"></a></div>
+        <div><a href="" target="_blank"><img src="img/mars.png" alt="missing img" title="Marte"></a></div>
+        <div><a href="" target="_blank"><img src="img/jupiter.png" alt="missing img" title="Jupiter"></a></div>
+        <div><a href="" target="_blank"><img src="img/saturn.png" alt="missing img" title="Saturno"></a></div>
+        <div><a href="" target="_blank"><img src="img/uranus.png" alt="missing img" title="Uranus"></a></div>
+        <div><a href="" target="_blank"><img src="img/neptune.png" alt="missing img" title="Neturno"></a></div>
+        </div>
     </main>
     <footer>
 
