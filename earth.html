@@ -14,8 +14,21 @@
         }
 
         header{
+            padding: 5%;
             color: rgb(255, 255, 250);
             cursor: default;
+            height: 100px;
+            width: 100px;
+            
+        }
+        #voltar{
+            padding: 0%;
+            width: 100px;
+            height: 100px;
+            transition: all 0.4s ease-out;
+        }
+        #voltar:hover{
+            transform: scale(1.2)
         }
 
         h1{
@@ -33,26 +46,31 @@
             size: 5px;
         }
 
-        img{
-            padding: 15%;
-            height: 150px;
-            width: 150px;
+        #grade{
+            padding: 100px;
+            height: 100px;
+            width: 100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             transition: all 0.4s ease-out;
-            cursor: pointer;
+            cursor: default;
         }
-        img:hover{
-            transform: scale(1.2);           
+        #terra{
+            height: 100px;
+            width: 100px;
         }
+        
     </style>
 </head>
 <body>
     <header>
         <h1>Terra</h1>
-        <div><a href="index.html" target="_self"><img src="img/milky-way.png" alt="missing img" title="Via-Láctea"></a></div>
+        <div><a href="index.html" target="_self"><img src="img/home.png" alt="missing img" title="Via-Láctea" id="voltar"></a></div>
     </header>
     <main>
         <div id=grade>
-        <div><a href="" target="_blank"><img src="img/earth.png" alt="missing img" title="Terra"></a></div>
+        <div><img src="img/earth.png" alt="missing img" title="Terra" id="terra"></div>
+        <p>A Terra é o terceiro planeta mais próximo do Sol, o mais denso e o quinto maior dos oito planetas do Sistema Solar.</p><p>É também o maior dos quatro planetas telúricos. É por vezes designada como Mundo ou Planeta Azul.</p><p>Lar de milhões de espécies de seres vivos, incluindo os humanos, a Terra é o único corpo celeste onde é conhecida a existência de vida.</p>
         </div>
     </main>
     <footer>
