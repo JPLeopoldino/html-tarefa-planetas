@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Marte</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: rgb(20, 20, 35);            
+            background-image: url("img/particles.png");
+            font-family: Helvetica Neue, Helvetica, Arial;            
+        }
+
+        header{
+            padding: 5%;
+            color: rgb(255, 255, 250);
+            cursor: default;
+            height: 100px;
+            width: 20px;
+            
+        }
+        #voltar{
+            position: absolute;
+            padding: 0%;
+            top: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            transition: all 0.4s ease-out;
+        }
+        #voltar:hover{
+            transform: scale(1.2)
+        }
+
+        h1{
+            font-size: 150px;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -55%);
+        }
+
+        main {
+            color:honeydew;
+            margin: auto;
+            size: 5px;
+        }
+        video{
+            position: absolute;            
+            width:100%;
+            height:95%;
+            object-fit: cover;
+        }
+        #bg{
+            position: absolute;            
+            width:100%;
+            height:300px;
+            object-fit: cover;
+            transform: translate(0,225%);
+        }
+        #texto{
+            font-size: 15px;
+            margin: 0;
+            padding: 15px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Marte</h1>
+        <a href="index.html" target="_self"><img src="img/home.png" alt="missing img" title="Voltar" id="voltar"></a>
+    </header>
+    <main>
+        <div id="texto">
+        <h2>Marte é o quarto planeta a partir do Sol, o segundo menor do Sistema Solar.</h2>
+        <p>Batizado em homenagem ao deus romano da guerra, muitas vezes é descrito como o "Planeta Vermelho", porque o óxido de ferro predominante em sua superfície lhe dá uma aparência avermelhada.</p>
+        <p>Marte é o lar do Monte Olimpo, a segunda montanha mais alta conhecida no Sistema Solar (a mais alta em um planeta), e do Valles Marineris, um desfiladeiro gigantesco.</p>
+        </div>
+        <p>Font: <a href="https://www.youtube.com/watch?v=1Ll-VHYxWXU" target="_blank">Youtube</a>.</p>
+        <video autoplay="´true" loop width="300" height="400">
+            <source src="vid/mars-opportunity.mp4" />
+           </video>
+        <img src="img/mars-bg.png" id="bg">
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

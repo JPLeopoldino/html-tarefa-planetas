@@ -14,6 +14,7 @@
         }
 
         header{
+            box-sizing: border-box;
             color: rgb(255, 255, 250);
             cursor: default;
         }
@@ -48,26 +49,58 @@
         img:hover{
             transform: scale(1.2);           
         }
+        footer{            
+            color:honeydew;
+            padding: 0;
+            margin: 0;
+            position:absolute;
+            bottom: 5%;
+            left: 5%;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>O nosso Sistema Solar</h1>
+        <audio src="msk/bg-sfx.mp3" loop autoplay="true"></audio>
     </header>
     <main>
         <div id=grade>
-        <div><a href="" target="_blank"><img src="img/mercury.png" alt="missing img" title="Mercurio"></a></div>
-        <div><a href="" target="_blank"><img src="img/venus.png" alt="missing img" title="Venus"></a></div>
+        <div><a href="" target="_self"><img src="img/mercury.png" alt="missing img" title="Mercurio"></a></div>
+        <div><a href="" target="_self"><img src="img/venus.png" alt="missing img" title="Venus"></a></div>
         <div><a href="earth.html" target="_self"><img src="img/earth.png" alt="missing img" title="Terra"></a></div>
-        <div><a href="" target="_blank"><img src="img/mars.png" alt="missing img" title="Marte"></a></div>
-        <div><a href="" target="_blank"><img src="img/jupiter.png" alt="missing img" title="Jupiter"></a></div>
-        <div><a href="" target="_blank"><img src="img/saturn.png" alt="missing img" title="Saturno"></a></div>
-        <div><a href="" target="_blank"><img src="img/uranus.png" alt="missing img" title="Uranus"></a></div>
-        <div><a href="" target="_blank"><img src="img/neptune.png" alt="missing img" title="Neturno"></a></div>
-        </div>
+        <div><a href="mars.html" target="_self"><img src="img/mars.png" alt="missing img" title="Marte"></a></div>
+        <div><a href="" target="_self"><img src="img/jupiter.png" alt="missing img" title="Jupiter"></a></div>
+        <div><a href="saturn.html" target="_self"><img src="img/saturn.png" alt="missing img" title="Saturno"></a></div>
+        <div><a href="" target="_self"><img src="img/uranus.png" alt="missing img" title="Urano"></a></div>
+        <div><a href="" target="_self"><img src="img/neptune.png" alt="missing img" title="Netuno"></a></div>
+        </div>        
     </main>
     <footer>
-
+        <table class=”zebra”>
+            <thead><tr>
+            <th>Planeta</th> <th>Tamanho (raio)</th>
+            </tr></thead>
+            <tbody><tr>
+            <td>Mercúrio</td> <td>2.439,7 km</td>
+            </tr><tr>
+            <td>Vênus</td> <td>6.051,8 km</td>
+            </tr><tr>
+            <td>Terra</td> <td>6.371 km</td>
+            </tr><tr>
+            <td>Marte</td> <td>3.389,5 km</td>
+            </tr><tr>
+            <td>Jupiter</td> <td>69.911 km</td>
+            </tr><tr>
+            <td>Saturno</td> <td>58.232 km</td>
+            </tr><tr>
+            <td>Urano</td> <td>25.362 km</td>
+            </tr><tr>
+            <td>Netuno</td> <td>24.622 km</td>
+            </tr></tbody>
+            </table>
+        <h5>Feito por: João Pedro</h5>
+        <h5>Font: <a href="https://pt.wikipedia.org/wiki/Via_L%C3%A1ctea" target="_blank">Wikipedia</a></h5>
     </footer>
 </body>
 </html>
